@@ -1,0 +1,50 @@
+@media (max-width: 321px) {
+  .logo {
+    padding: 0;
+  }
+
+  .banner {
+    &__container {
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+  }
+
+  .item-about {
+    &__text {
+      font-size: 15px;
+    }
+
+    &__icon {
+      width: 35px;
+      height: 35px;
+    }
+
+    &:first-child &__icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .catalog {
+    &__item {
+      height: 200px;
+      @include catalogBackground(center bottom, center bottom);
+    }
+  }
+
+  .item-categories {
+    @include catalogBackground(center bottom -30px, center bottom);
+  }
+
+  .menu {
+    &__icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__item {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.catalog {
+  height: auto;
+  padding: 20px 0;
+
+  &__body {
+    @include flexJustifyAlign(space-between, center, row);
+    flex-wrap: wrap;
+  }
+  &__text-p {
+    width: 100%;
+    text-align: center !important;
+    padding: 25px 0;
+  }
+
+
+  &__spacer {
+    display: block;
+    border-radius: $border-radius;
+    height: 280px;
+    width: 31%;
+    padding:  25px;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    display: block;
+    border-radius: $border-radius;
+    color: #fff;
+    height: 280px;
+    width: 31%;
+    padding:  25px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &_garden {
+      background: rgb(169,222,120);
+      background: url("../img/catalog/garden.png") no-repeat, linear-gradient(180deg, rgba(169,222,120,1) 0%, rgba(233,246,220,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_wedding {
+      background: rgb(222,119,180);
+      background: url("../img/catalog/wedding.png") no-repeat, linear-gradient(180deg, rgba(222,119,180,1) 0%, rgba(246,217,234,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_compositions {
+      background: rgb(120,199,222);
+      background: url("../img/catalog/compositions.png") no-repeat, linear-gradient(180deg, rgba(120,199,222,1) 0%, rgba(221,241,247,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_pots {
+      background: rgb(146,161,227);
+      background: url("../img/catalog/pots.png") no-repeat, linear-gradient(180deg, rgba(146,161,227,1) 0%, rgba(226,230,247,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_souvenirs {
+      background: rgb(75,164,171);
+      background:url("../img/catalog/souvenirs.png") no-repeat, linear-gradient(180deg, rgba(75,164,171,1) 0%, rgba(205,230,231,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_balloons {
+      background: rgb(255,118,99);
+      background: url("../img/catalog/balloons.png") no-repeat, linear-gradient(180deg, rgba(255,118,99,1) 0%, rgba(255,213,207,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    &_funeral {
+      background: rgb(64,22,66);
+      background: url("../img/catalog/funeral.png") no-repeat, linear-gradient(180deg, rgba(64,22,66,1) 0%, rgba(202,190,202,1) 100%, rgba(255,255,255,1) 100%);
+    }
+
+    &_bouquets {
+      background: rgb(197,102,232);
+      background: url("../img/catalog/bouquets.png") no-repeat, linear-gradient(180deg, rgba(197,102,232,1) 0%, rgba(239,214,249,1) 100%, rgba(255,255,255,1) 100%);
+    }
+    @include catalogBackground(center bottom, center bottom);
+  }
+}

@@ -1,0 +1,51 @@
+.product {
+  @include flexJustifyAlign(center, center, column);
+  padding: 20px 0;
+  &__title {
+  }
+
+  &__page-title {
+    margin-top: 0;
+  }
+
+  &__text-p {
+    padding: 10px 0;
+  }
+
+  &__description {
+    padding: 0 0 10px 0;
+    width: 65%;
+  }
+
+  &__gallery {
+
+  }
+}
+
+.pd-gallery {
+  width: 75%;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr;
+  &__row {
+    &_large {
+
+    }
+  }
+  &__link {
+    height: 230px;
+    display: block;
+  }
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+
+

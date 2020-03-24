@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Host: interbios.ru
+Sitemap: https://interbios.ru/sitemap.xml

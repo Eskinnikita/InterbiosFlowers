@@ -1,0 +1,19 @@
+.delivery {
+  padding: 20px 0;
+  //height: 50vh;
+  @include flexJustifyAlign(center, center, column);
+  &__text-p {
+    text-align: center !important;
+    display: block;
+    padding: 20px 0;
+    line-height: 1.25em;
+  }
+  &__image-wrapper {
+    text-align: center;
+    border-radius: 50%;
+  }
+  &__image {
+    margin: 30px 0 45px 0;
+    width: 50%;
+  }
+}

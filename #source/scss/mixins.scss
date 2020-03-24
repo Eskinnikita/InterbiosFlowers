@@ -1,0 +1,24 @@
+@mixin flexJustifyAlign($justify, $align, $direction){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin container {
+  max-width: 1080px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin catalogBackground($pos1, $pos2) {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: $pos1, $pos2 !important;
+}
+
+//@mixin catalogBackground($image, $backgroundColor, $gradient, $imagePos1, $imagePos2) {
+//  background: $backgroundColor;
+//  background: $image $imagePos1 $imagePos2 no-repeat, $gradient;
+//  background-size: contain;
+//}
