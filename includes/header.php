@@ -21,10 +21,10 @@
     </div>
     <nav class="header__menu menu">
         <div class="menu__container">
-            <a <?php echo ($page == 'index') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../"><img class="menu__icon" src="../img/menu-icons/home-run.png" alt="Иконка дом"><span>Главная</span></a>
-            <a <?php echo ($page == 'catalog') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../catalog.php"><img class="menu__icon" src="../img/menu-icons/bouquet.png" alt="Иконка букет"><span>Каталог</span></a>
-            <a <?php echo ($page == 'delivery') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../delivery.php"><img class="menu__icon" src="../img/menu-icons/product.png" alt="Иконка доставки"><span>Доставка</span></a>
-            <a <?php echo ($page == 'contacts') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../contacts.php"><img class="menu__icon" src="../img/menu-icons/pin.png" alt="Иконка метки на карте"><span>Контакты</span></a>
+            <a <?php echo (isset($page) && $page == 'index') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../"><img class="menu__icon" src="../img/menu-icons/home-run.png" alt="Иконка дом"><span>Главная</span></a>
+            <a <?php echo (isset($page) && $page == 'catalog') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../catalog.php"><img class="menu__icon" src="../img/menu-icons/bouquet.png" alt="Иконка букет"><span>Каталог</span></a>
+            <a <?php echo (isset($page) && $page == 'delivery') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../delivery.php"><img class="menu__icon" src="../img/menu-icons/product.png" alt="Иконка доставки"><span>Доставка</span></a>
+            <a <?php echo (isset($page) && $page == 'contacts') ? "class='menu__item menu__item_active'" : "class='menu__item'"; ?> href="../contacts.php"><img class="menu__icon" src="../img/menu-icons/pin.png" alt="Иконка метки на карте"><span>Контакты</span></a>
         </div>
     </nav>
 </header>
